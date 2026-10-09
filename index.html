@@ -34,3 +34,169 @@
     border-left: 4px solid var(--accent); line-height: 1.3;
   }
   p, li { color: var(--ink); }
+  a { color: var(--accent); }
+  .meta {
+    margin: 0 0 2rem; padding: 1rem 1.1rem; border: 1px solid var(--rule);
+    border-radius: 10px; background: #f7f9f6; font-size: .95rem;
+  }
+  .meta div { margin: .15rem 0; }
+  .meta strong { color: var(--muted); font-weight: 600; }
+  .lede { font-size: 1.05rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .45rem 0; }
+  table {
+    width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .95rem;
+    display: block; overflow-x: auto;
+  }
+  th, td {
+    text-align: left; vertical-align: top; padding: .6rem .7rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  th { color: var(--muted); font-size: .8rem; text-transform: uppercase;
+       letter-spacing: .06em; white-space: nowrap; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6e8e4; --muted: #a3aba1; --rule: #333a32;
+      --accent: #7dc47f; --bg: #141613;
+    }
+    .meta { background: #1c1f1b; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy</h1>
+
+<div class="meta">
+  <div><strong>App:</strong> Stop Smoking</div>
+  <div><strong>Developer:</strong> Alki Web Development</div>
+  <div><strong>Contact:</strong> <a href="mailto:charliekunkel@gmail.com">charliekunkel@gmail.com</a></div>
+  <div><strong>Effective date:</strong> 9 October 2026</div>
+</div>
+
+<h2>The short version</h2>
+<p class="lede">Stop Smoking keeps everything on your phone. There is no account, no server,
+and no analytics. We do not collect, transmit, sell, or share your information.
+The one thing that can leave your phone is a bug report, and only if you write
+one and send it yourself — see <strong>Reporting a problem</strong> below.</p>
+
+<h2>What the app stores on your device</h2>
+<p>All of the following is saved in the app's private storage on your phone. The
+app never transmits any of it; the only way any of it leaves your phone is in a
+bug report you choose to send.</p>
+<ul>
+  <li><strong>Your quit plan</strong> — target quit date, cigarettes per day, cost per pack,
+      waking hours, and alert timing preferences.</li>
+  <li><strong>Your smoking history</strong> — the date and time of each cigarette you log, daily
+      totals, and the money-saved and money-spent figures calculated from them.</li>
+  <li><strong>Achievements</strong> you have earned.</li>
+  <li><strong>Accountability contacts</strong> — for any contact you choose to add as a buddy,
+      the app saves that person's name and phone number. Contacts you do not
+      select are not saved.</li>
+  <li><strong>Media you add</strong> — photos you pick as background images, and any sounds you
+      record or upload for alerts, are copied into the app's own storage.</li>
+</ul>
+
+<h2>Permissions and why the app asks for them</h2>
+<table>
+  <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Notifications</td><td>To deliver your smoke-window alerts, health facts, end-of-day check-in, and achievements.</td></tr>
+    <tr><td>Alarms &amp; reminders</td><td>To make alerts arrive at the right minute. Without it Android delays them by several minutes.</td></tr>
+    <tr><td>Microphone</td><td>Only while you are recording a custom alert sound. Recording is started by you and never happens in the background.</td></tr>
+    <tr><td>Photos / files</td><td>Only to read the specific image or audio file you pick.</td></tr>
+    <tr><td>Contacts</td><td>Only to let you choose accountability buddies. Only the buddies you pick are saved.</td></tr>
+    <tr><td>Ignore battery optimisation</td><td>Optional. Some phones cancel scheduled alarms to save power; this keeps alerts arriving.</td></tr>
+    <tr><td>Run at startup</td><td>To restore your scheduled alerts after the phone reboots, since Android clears them.</td></tr>
+  </tbody>
+</table>
+
+<h2>Sounds you record are placed in your phone's Notifications folder</h2>
+<p>So that Android can play your custom sound when the app is closed, a copy of
+each sound you record or upload for an <strong>alert</strong> is placed in your device's
+shared <code>Notifications</code> folder. This makes it selectable as a system notification
+sound and visible to other apps on your device that can browse audio files. It
+is not uploaded anywhere. Deleting the sound in the app removes that copy.</p>
+<p>The sound that plays when you log a cigarette is played by the app itself and is
+<strong>not</strong> copied to shared storage.</p>
+
+<h2>Calls and text messages</h2>
+<p>The app never places a call or sends a message by itself. Tapping a buddy's
+phone number opens your dialer with the number filled in, and the relapse
+support feature opens your messaging app with a message drafted. In both cases
+nothing is sent until you choose to send it.</p>
+
+<h2>Reporting a problem</h2>
+<p>Settings has a <strong>Report a problem</strong> screen. It gathers what the app has
+scheduled, what Android has agreed to, and a log of what the app did over the
+preceding days — what is needed to work out why an alert arrived late, twice,
+or not at all.</p>
+<p>Nothing is sent from the app. The whole report is shown on that screen first,
+so you can read it before deciding anything. <strong>Email report</strong> opens your own
+email app with the report filled in, and it goes only when you send it.
+<strong>Copy</strong> puts it on your clipboard instead.</p>
+<p>A report contains:</p>
+<ul>
+  <li>The app's version, and whether Android is allowing it notifications and
+      exact alarms.</li>
+  <li>How many alerts are scheduled, and when they are due.</li>
+  <li>Your plan: cigarettes per day, cost per pack, waking hours, and quit date.</li>
+  <li>A log of what the app did — alerts queued and delivered, Do Not Disturb
+      switched on and off, achievements earned, settings saved, errors.</li>
+  <li>Whatever you type into the "What happened?" box.</li>
+</ul>
+<p>A report never contains the wording of any alert you have written, the names
+of sounds you have recorded or added, the filenames of photos you have chosen,
+your accountability contacts, or any photo or audio itself. Those are reduced
+to counts before the app writes them down, so there is nothing to leak.</p>
+<p>If you email a report we will see your email address, because that is how
+email works and how we would reply to you. A report is used only to find and
+fix the problem it describes, is never shared with anyone else, and is deleted
+once that problem is resolved.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+  <li>No advertising, and no advertising identifiers.</li>
+  <li>No analytics, tracking, telemetry, or <strong>automatic</strong> crash reporting.
+      Bug reports exist, but only ever because you wrote one and sent it.</li>
+  <li>No user accounts and no cloud storage.</li>
+  <li>Your information is never sold, rented, or shared with third parties.</li>
+</ul>
+
+<h2>Keeping and deleting your information</h2>
+<p>Your information stays on your device until you remove it. (A bug report you
+chose to email is the exception — see above for what happens to that.) You can
+erase all of it at any time by using <strong>Start Over</strong> in the app's settings, or by
+uninstalling the app, which deletes its private storage. Sounds you added to the
+shared Notifications folder are removed when you delete them in the app; any
+that remain after uninstalling can be deleted with your phone's file manager.</p>
+
+<h2>Children</h2>
+<p>Stop Smoking is intended for adults who smoke. It is not directed at children
+and we do not knowingly collect information from anyone under 18.</p>
+
+<h2>Health information</h2>
+<p>The app records information about your smoking that many people consider
+sensitive. It stays on your device unless you send a bug report, which includes
+your plan and your alert history. Stop Smoking is a self-help tool, not a
+medical device, and it does not provide medical advice.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the updated version will be posted at this same address
+with a new effective date. Material changes will also be noted in the app's
+release notes.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy:
+<a href="mailto:charliekunkel@gmail.com">charliekunkel@gmail.com</a></p>
+
+<footer>Stop Smoking — Alki Web Development. Last updated 9 October 2026.</footer>
+
+</main>
+</body>
+</html>
